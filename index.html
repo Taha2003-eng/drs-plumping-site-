@@ -1,199 +1,159 @@
-<DOCTYPE html!>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>مطعم الذوق الرفيع
-    <!--Tab to edit-->
-  </title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-    <!--Tab to edit-->
-  
-    <!--Tab to edit-->
-  
-    <!--Tab to edit-->
-  
-  <!--Tab to edit-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دارس الهندسية للمقاولات</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background: #fff;
+      color: #333;
+      direction: rtl;
+    }
+
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 22px; }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      background: url("hero.jpg") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: green;
+      text-align: center;
+    }
+    .hero h2 { font-size: 36px; margin: 0 0 20px; }
+    .hero p { font-size: 20px; margin: 0 0 30px; }
+    .hero a {
+      background: #25D366;
+      color: #fff;
+      padding: 12px 25px;
+      margin: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Services */
+    .services { padding: 50px 20px; text-align: center; background: #f9f9f9; }
+    .services h2 { color: #004080; margin-bottom: 30px; }
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+    .card:hover { transform: scale(1.05); }
+
+    /* Gallery */
+    .gallery { padding: 50px 20px; text-align: center; }
+    .gallery h2 { color: #004080; margin-bottom: 30px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .gallery-grid img:hover { transform: scale(1.05); }
+
+    /* Contact */
+    .contact { padding: 50px 20px; background: #f9f9f9; text-align: center; }
+    .contact h2 { color: #004080; margin-bottom: 20px; }
+    .contact p { font-size: 18px; margin: 10px 0; }
+
+    /* Footer */
+    footer {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">الرئيسية
-        <!--Tab to edit-->
-      
-        <!--Tab to edit-->
-      </a>
-        <!--Tab to edit-->
-      </li>
-      <li><a href="gallery.html">الاصناف
-        <!--Tab to edit-->
-      
-        <!--Tab to edit-->
-      </a>
-        <!--Tab to edit-->
-      </li>
-      <li><a href="order.html">الطلب
-        <!--Tab to edit-->
-      
-        <!--Tab to edit-->
-      </a>
-        <!--Tab to edit-->
-      </li>
-        <!--Tab to edit-->
-      
-        <!--Tab to edit-->
-      
-      <!--Tab to edit-->
-    </ul>
-    <!--Tab to edit-->
-  </nav>
-  <section class="hero">
-    <h1>مطعم الذوق الرفيع
-      <!--Tab to edit-->
-    </h1>
-    <p>افضل الأطباق الشرقية والغربية بنكهات لا تنسى
-      <!--Tab to edit-->
-    </p>
-    <a href="gallery.html" class="ptn">تصفح القائمة
-      <!--Tab to edit-->
-    
-      <!--Tab to edit-->
-    </a>
-    
-    <!--Tab to edit-->
-  </section>
-  <section class="about">
-    <h2>من نحن
-      <!--Tab to edit-->
-    </h2>
-    <p>نحن مطعم يقدم اشهى الماكولات باستخدام افضل المكونات الطازجة مع خدمة مميزة
-      <!--Tab to edit-->
-    </p>
-    </section>
-    <!--Tab to edit-->
-  <section class="meals">
-  <h2>الاصناف المميزة
-    <!--Tab to edit-->
-  </h2>
-   <div class="meal-list">
-     <div class="meal">
-       <img src="images/meal1.jpg" alt="بيتزا مارجريتا">
-       <h3> بيتزا مارجريتا
-         <!--Tab to edit-->
-       </h3>
-       <p>10$السعر 
-         <!--Tab to edit-->
-       </p>
-       <a href ="order.html" class="btn">اطلب الان
-         <!--Tab to edit-->
-       
-         <!--Tab to edit-->
-       </a>
-         <!--Tab to edit-->
-       
-       <!--Tab to edit-->
-     
-     <!--Tab to edit-->
-   </div>
-   <div class="meal">
-     <img src="images/meal2.jpg" alt="برجر ديلوكس">
-       <h3>برجر ديلوكس
-         <!--Tab to edit-->
-       </h3>
-       <p>8$السعر
-         <!--Tab to edit-->
-       </p>
-       <a href="order.html" class="btn">اطلب الان
-         <!--Tab to edit-->
-       
-         <!--Tab to edit-->
-       </a>
-       <!--Tab to edit-->
-     
-     <!--Tab to edit-->
-   </div>
-   <div class="meal">
-     <img src="images/meal3.jpg" alt=" باستا كاربونارا">
-     <h3>باستا كاربونارا
-       <!--Tab to edit-->
-     </h3>
-     <p>12$السعر 
-       <!--Tab to edit-->
-     </p>
-     <a href="order.html"class="btn">اطلب الان
-       <!--Tab to edit-->
-     </a>
-       <!--Tab to edit-->
-     
-     <!--Tab to edit-->
-   </div>
-   <div class="meal">
-     <img src="images/meal4.jpg" alt="شاورما عربي">
-     <h3>شاورما عربي
-       <!--Tab to edit-->
-     </h3>
-     <p>6$السعر
-       <!--Tab to edit-->
-     </p>
-     <a href="order.html" class="btn">اطلب الان
-       <!--Tab to edit-->
-     </a>
-       <!--Tab to edit-->
-     
-     
-     <!--Tab to edit-->
-   </div>
-   <a href="gallery.html" class="btn">المزيد
-     <!--Tab to edit-->
-   </a>
-   
-  
-  
-  
-    <!--Tab to edit-->
-  </section>
-  <section class="contact">
-    <h2>تواصل معنا
-      <!--Tab to edit-->
-    </h2>
-      <p>0110981590📞
-        <!--Tab to edit-->
-      </p>
-      <p>✉️info@resturant.com
-       
-        <!--Tab to edit-->
-      </p>
-      <p>📍الخرطوم، السودان
-        <!--Tab to edit-->
-      </p>
-      <div class="social">
-        <a href="#">فيسبوك
-          <!--Tab to edit-->
-        </a>
-        <a href="#">إنستجرام
-          <!--Tab to edit-->
-        </a>
-        <a href="#">تويتر
-          <!--Tab to edit-->
-        </a>
-      </div>
-      
-        <!--Tab to edit-->
-    
-      <!--Tab to edit-->
-  
-  
-    <!--Tab to edit-->
-  
-    <!--Tab to edit-->
-  </section>
-  <footer>
-    <p>جميع الحقوق محفوظه لدى مطعم الذوق الرفيع 2025
-      <!--Tab to edit-->
-    </p>
-    <!--Tab to edit-->
-  </footer>
-  <!--Tab to edit-->
-</body>  
 
-  <!--Tab to edit-->
+  <header>
+    <h1>دارس الهندسية للمقاولات</h1>
+    <nav>
+      <a href="#services">خدماتنا</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>خدمة سباكة احترافية بخبرة 20 عام</h2>
+    <p>حلول متكاملة للسباكة والتأسيس بأعلى جودة</p>
+    <a href="https://wa.me/249110981590">تواصل واتساب</a>
+    <a href="tel:0911254775">اتصل الآن</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>خدماتنا</h2>
+    <div class="service-cards">
+      <div class="card">تمديد شبكات المياه</div>
+      <div class="card">تركيب السخانات</div>
+      <div class="card">صيانة التسريبات</div>
+      <div class="card">تأسيس وتشطيب الحمامات</div>
+      <div class="card">تأسيس وتشطيب المطابخ</div>
+      <div class="card">تأسيس خطوط الغاز</div>
+      <div class="card">تركيب الطرمبات والخزانات</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>معرض الأعمال</h2>
+    <div class="gallery-grid">
+      <img src="plumbing1.jpg" alt="مشروع 1">
+      <img src="plumbing2.jpg" alt="مشروع 2">
+      <img src="plumbing3.jpg" alt="مشروع 3">
+      <img src="plumbing4.jpg" alt="مشروع 4">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>تواصل معنا</h2>
+    <p>📞 0110981590</p>
+    <p>📞 0911254775</p>
+    <p>واتساب: <a href="https://wa.me/249110981590">0110981590</a></p>
+    <p>🌐 <a href="http://taha-eng.com" target="_blank">taha-eng.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 دارس الهندسية للمقاولات. جميع الحقوق محفوظة.</p>
+  </footer>
+
+</body>
 </html>
